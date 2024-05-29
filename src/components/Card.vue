@@ -1,3 +1,8 @@
+<script setup>
+
+const props =defineProps(['quiz'])
+
+</script>
 <template>
   
     <div class="card">
@@ -11,14 +16,6 @@
        </div>
 
 </template>
-
-<script setup>
-import q from "../data/quizes.json"
-import {defineProps} from 'vue'
-
-const props =defineProps(['quiz'])
-
-</script>
 
 <style>
 .card{

@@ -1,20 +1,22 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import Quiz from "./components/Quiz.vue";
+
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <Quiz />
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
+  
+   <div class="container">
+      <nav>
+        <RouterLink to="/">Home |</RouterLink>
+        <RouterLink to="/quiz"> Quiz </RouterLink>
+      </nav>
     </div>
-  </header>
-
   <RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+</style>
